@@ -1,25 +1,31 @@
-Module 11 — Calculation Model with SQLAlchemy, Pydantic, Factory Pattern, and CI/CD
+# Module 11 — Calculation Model with SQLAlchemy, Pydantic, Factory Pattern, and CI/CD
 
-How to run tests locally
+## How to Run Tests Locally
 
-# Create & activate venv
-python3 -m venv venv
-source venv/bin/activate
+### 1️⃣ Create & activate virtual environment
 
-# Install dependencies
-pip install -r requirements.txt
+    python3 -m venv venv
+    source venv/bin/activate
 
-# Start Postgres (for integration tests)
-docker compose up -d db
+### 2️⃣ Install dependencies
 
-# Run all tests
-pytest
+    pip install -r requirements.txt
+
+### 3️⃣ Start Postgres (required for integration tests)
+
+    docker compose up -d db
+
+### 4️⃣ Run all tests
+
+    pytest
 
 
-CI/CD section
+## CI/CD Pipeline
 
-GitHub Actions runs tests, builds the Docker image, and pushes to Docker Hub on main
+This project includes a complete CI/CD pipeline using GitHub Actions.  
 
-Docker Hub link-
+## Docker Image on Docker Hub
+
+The Docker image is automatically published here:
 
 https://hub.docker.com/repository/docker/yugpatil/module11_is601

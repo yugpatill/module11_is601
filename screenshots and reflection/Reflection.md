@@ -1,0 +1,5 @@
+During this assignment, I gained a clearer understanding of how a full FastAPI project is developed, tested, containerized, and deployed using CI/CD. One of the key experiences was working with Playwright end-to-end tests and learning how frontend and backend interactions can be validated automatically.
+
+A major challenge I faced was fixing dependency conflicts in the Docker build, especially between httpcore and h11. Updating the requirements and making sure Trivy passed with no vulnerabilities helped me understand how important secure dependency management is. Another challenge was ensuring the frontend worked exactly as expected for automated tests. I had to debug why the result was not updating in the DOM, which helped me understand browser automation better.
+
+Finally, configuring the GitHub workflow to build, scan, test, and push a Docker image to Docker Hub gave me real experience with professional CI/CD pipelines. Overall, this project improved my understanding of backend security, testing workflows, Docker, and automated deployment.
